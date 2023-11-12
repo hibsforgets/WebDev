@@ -1,0 +1,86 @@
+body {
+    align-items: center;
+    background: url(../images/gallery.jpg);
+}
+#fixed-header {
+    background-color: rgb(170, 203, 203);
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-size: xx-large;
+    font-family: monospace;
+    font-weight: bold;
+    margin-top: 40px;
+ 
+}
+.gallery{
+    padding-right: 10px;
+    margin-left: 250px;
+    display: inline-block;
+    padding-top: 5px;
+    padding-left: 10px;
+    
+
+}
+.thumbnail{
+    display: inline-block;
+    border-style: groove;
+    padding: 4px;
+    margin-right: 20px;
+    border-color: rgb(255, 255, 255);
+    width: 200px;
+    height: 200px;
+    background-color: rgb(170, 203, 203);
+
+}
+img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    padding:10px
+}
+.desc{
+    padding: 8px;
+    font-size: large;
+    text-align: center;
+    color: black;
+    font-weight: bold;
+}
+.row{
+    margin-top: 18px;
+    padding: 12px;
+}
+.thumbnail:hover{
+    border-color: black;
+    width: 240px;
+    height: 240px;
+}
+
+a{
+    color: rgba(0, 0, 0, 0);
+}
+
+.thumbnail:hover img{
+    width: 200px;
+    height:200px;
+    margin-left: 10px;
+    
+}
+
+.thumbnail:hover desc{
+    font-size: xx-large;
+}
+
+.imgs p {
+    margin-top: 2px;
+    cursor: zoom-in;
+    transition: transform 2s ease;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+input[type=checkbox]:checked ~ label > img {
+    transform: scale(3);
+    cursor: zoom-out;
+}

@@ -1,0 +1,104 @@
+<!-- color palette:
+borders: #f44336
+text: #595858
+-->
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/signup.css">
+    <link rel="stylesheet" href="../css/mainstyle.css">
+
+    <title>
+        Sign Up
+    </title>
+</head>
+
+<body>
+
+    <div id="fixed-header" style="margin-top: 0; color: black; ">
+        Welcome
+    </div>
+
+    <div class="card">
+        <h2>Sign Up</h2>
+        <div class="form">
+            <form action="../BE/signup.php" method="POST" name="signup-form">
+                <label for="un">First Name</label>
+                <br>
+                <input type="text" name="firstname" class="txtfield">
+                <br>
+                <label for="un">Last Name</label>
+                <br>
+                <input type="text" name="lastname" class="txtfield">
+                <br>
+                <label for="un">UserName</label>
+                <br>
+                <input type="text" name="email" class="txtfield">
+                <br>
+                <label for="pass">Password</label>
+                <br>
+                <input type="password" name="pass" class="txtfield">
+                <br>
+                <label for="confirmPassword" style="margin-left: 65px;"> Confirm Password</label>
+                <br>
+                <input type="password" name="confirmPassword">
+
+                <br><br>
+                <input type="radio" name="sex" checked id="r-male" value="m">
+                <label for="r-male" style="margin-left: 14px; margin-right: 15px;">Male</label>
+                <input type="radio" name="sex" id="r-female" value="f">
+                <label for="r-female" style="margin-left: 10px; margin-right: 0px;">Female</label>
+                <br><br>
+                <label for="dob" style="margin-right: -18px; margin-left: 20px;">Date of Birth</label>
+                <input type="date" name="dob"><br><br>
+                <input type="button" class="button" value="Sign Up" class="mButton" onclick="SignUp()">
+                <input type="button" class="button" value="Cancel" class="mButton" onclick="ClearForm()">
+            </form>
+            <div style="margin-top: 40px;">
+                <span>Already Have An Account?</span>
+                <div style="margin-top: 10px;">
+                    <button class="button">
+                        <a href="../html/index.html">Log In...</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function SignUp() {
+            var mForm = document.querySelector("form[name='signup-form']");
+            var fn = mForm.elements["firstname"].value;
+            var ln = mForm.elements["lastname"].value;
+            var email = mForm.elements["email"].value;
+            var pass = mForm.elements["pass"].value;
+            var confPass = mForm.elements["confirmPassword"].value;
+            var sex = mForm.elements["sex"].value;
+            var dob = mForm.elements["dob"].value;
+            console.log("fn:" + fn);
+            console.log("ln:" + ln);
+            console.log("email:" + email);
+            console.log("pass:" + pass);
+            console.log("confPass:" + confPass);
+            console.log("sex:" + sex);
+            console.log("dob"+dob);
+
+            if ((pass != confPass) || (pass == ""))
+                alert("Passwords must be equal.");
+            else
+                mForm.submit();
+        }
+        function ClearForm() {
+            var mForm = document.querySelector("form[name='signup-form']");
+            mForm.elements["firstname"].value = "";
+            mForm.elements["lastname"].value = "";
+            mForm.elements["email"].value = "";
+            mForm.elements["pass"].value = "";
+            mForm.elements["confirmPassword"].value = "";
+            mForm.elements["sex"].value = "m";
+            mForm.elements["dob"].value="";
+            
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+.burger-ico{
+    background: url("../images/icons/burgermenu128p.png");
+}
+
+.lin-ico{
+    background: url(../images/icons/LinkedIn_logo_initials.png);
+}
+.location-ico {
+    background: url(../images/icons/location.png);
+}
+.mobile-ico{
+    background: url(../images/icons/Mobile-Smartphone-icon.png);
+}
+.user-ico{
+    background: url("../images/icons/user.png");
+}
+.phone-ico{
+    background: url("../images/icons/phone-icon-1024x1024-bn4mirqi.png");
+}
+.email-ico{
+    background: url("../images/icons/email-icon.png");
+}
+.tele-ico{
+    background: url("../images/icons/Telegram_logo.svg.png");
+}
+.twitter-ico{
+    background: url("../images/icons/twitter-icon.png");
+}
+.insta-ico{
+    background: url("../images/icons/insta-icon.png");
+}
+.fb-ico{
+    background: url("../images/icons/facebook-icon.png");
+}
+.home-ico{
+    background: url("../images/icons/home-page-161.png");
+}
+.wallet-ico{
+    background: url("../images/icons/wallet.png");
+}
+
+.gallery-ico{
+    background: url("../images/icons/gallery.png");
+}
+.contact-ico{
+    background: url("../images/icons/contact.png");
+}
+.ico{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-size: cover;
+    margin: 5px;
+    vertical-align: middle;
+}
+
+.ico-l{
+    width: 0px;
+    height: 0px;
+}
+
+.ico-social-media{
+    width:500px;
+    height:500px;
+
+}
+
+.ico-contact{
+    width: 50px;
+    height:50px;
+}
