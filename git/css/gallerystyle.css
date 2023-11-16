@@ -15,7 +15,7 @@ body {
 }
 .gallery{
     padding-right: 10px;
-    margin-left: 250px;
+    margin-left: 160px;
     display: inline-block;
     padding-top: 5px;
     padding-left: 10px;
@@ -27,6 +27,7 @@ body {
     border-style: groove;
     padding: 4px;
     margin-right: 20px;
+    margin-bottom: 20px;
     border-color: rgb(255, 255, 255);
     width: 200px;
     height: 200px;
