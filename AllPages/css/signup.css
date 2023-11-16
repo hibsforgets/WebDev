@@ -1,7 +1,7 @@
 body{
-    background: url(../images/gallery.jpg);
-}
+    background-image: url('../images/gallery.jpg');
 
+}
 .form{
     position: relative;
     top:6%
@@ -29,6 +29,7 @@ body{
     margin-bottom: 50px;
     position: relative;
     text-align: center;
+    border-radius: 8%;
   
 }
 
@@ -37,6 +38,7 @@ body{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     font-size: 15px;
     font-weight: bold;
+    border:0px
     
 }
 

@@ -16,7 +16,6 @@ body {
     display: inline-block;
     margin: 10px;
     background-color: white;
-    position: relative;
     
 
 }
@@ -60,6 +59,7 @@ a{
     text-align: center;
     margin-top: 50px;
     position: relative;
+    z-index: -1;
   
 }
 
@@ -70,6 +70,7 @@ a{
     margin-right: 20px;
     position: relative;
     bottom: -50px;
+    z-index:0;
     
 }
 
@@ -92,5 +93,6 @@ a{
     height: 250px;
 
 }
+
 
 

@@ -1,3 +1,10 @@
+<?php 
+session_start();
+session_unset();
+session_destroy();
+?>
+
+
 <html>
     <head>
         <link rel="stylesheet" href="../css/login.css"> 
@@ -8,17 +15,15 @@
         </title>
     </head>
     <body>
+    <div class="background-image"></div>
         <div class="row header " >
             
         </div>
-        <div id="fixed-header" style="margin-top: 0; color: black; ">
-                Welcome 
-        </div>     
-        
+       
     <div class="card">
         <h2>Log In</h2>
         <div class="form">
-            <form action="BE/login.php" method="POST" id="login-form">
+            <form action="../BE/login.php" method="POST" id="login-form">
                 <label for="un"> UserName</label>
                 <br>
                 <input type="text" name="username" id="un">
@@ -28,15 +33,12 @@
                 <input type="password" name="password" id="pass">
                 <br>
                 <input class="button" type="button" value="Login" onclick="login()">
-                <input class="button" type="button" value="Cancel" onclick="ClearForm()">
             </form>
             <div style="margin-top: 60px;">
                 <span>Not Registered Yet?</span>
-                <div style="margin-top: 10px;">
-                    <button class="button">
-                        <a href="../html/signup.html">Sign Up...</a>
+                <button class="button" style="width: 85px;">
+                        <a href="signup.html">Sign Up...</a>
                     </button>
-                </div>
             </div>
         </div>
     </div>

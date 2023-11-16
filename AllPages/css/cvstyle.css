@@ -26,7 +26,7 @@ body {
     border-radius: 36px;
     margin: auto;
     padding: 38px;
-    background-color: #373535;
+    background-color: #9daabffa;
     font-family: 'Times New Roman', Times, serif;
     font-size: large;
     margin-top: 80px;
@@ -38,7 +38,7 @@ body {
 #header-cv {
     display: flex;
     align-items: center;
-    background-color: #86a0a0;
+    background-color: #2e2e2e;
     padding: 20px;
     margin-bottom: 7px;
     color: rgb(170, 203, 203);
@@ -47,7 +47,7 @@ body {
 }
 
 #header-cv img {
-    width: 120px;
+    width: 180px;
     margin-left: 41px;
     margin-right: 67px;
 }
@@ -56,9 +56,9 @@ body {
 
 #header-cv b {
     display: block;
-    font-size: xx-large;
-    margin-left: 150px;
-    color: #373535;
+    font-size: xxx-large;
+    margin-left: 33px;
+    color: #f8f8f8;
 }
 
 
@@ -67,16 +67,16 @@ body {
 }
 
 #left-side {
-    border-right: 1px dotted #ccc;
+    border-right: 1px dotted #090909;
     float: left;
     width: 26%;
     margin-right: 0.5rem;
     padding-right: 16px;
-    color: wheat;
+    color: rgb(6, 6, 6);
 }
 #right-side {
     float: right;
-    color: wheat;
+    color: rgb(8, 8, 8);
     width: 74%;
 }
 
@@ -97,10 +97,10 @@ ul li {
 
 
 .title {
-    background-color: #86a0a0;
+    background-color: #2e2e2e;
     margin: 10px 0;
     text-align: center;
-    color: #383838;
+    color: #f8f8f8;
 }
 .subtitle h3 {
     margin: 0;
@@ -177,4 +177,9 @@ ul li {
 .navbar a:hover {
     background-color: #ddd;
     color: black;
+}
+
+.profile-pic{
+    border-radius: 30px;
+
 }
