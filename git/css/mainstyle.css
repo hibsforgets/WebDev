@@ -42,3 +42,36 @@
     background-position: center;
     z-index: -1; /* Put the background behind other content */
   }
+
+  .form input{
+    border-radius: 10px;
+    margin: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 15px;
+    font-weight: bold;
+    border: 0px;
+    height: 25px;
+}
+
+.form{
+    position: relative;
+    top:10%
+}
+
+.form label{
+    color: rgb(6, 6, 6);
+    font-size: 18px;
+    margin-right: 100px;
+    font-weight: bold;
+    position: relative;
+    right: 5%;
+    
+}
+
+.span-a{
+    color:rgb(0, 0, 0);
+    font-size: large;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: underline;
+}
+

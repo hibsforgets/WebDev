@@ -26,7 +26,7 @@ body {
     border-radius: 36px;
     margin: auto;
     padding: 38px;
-    background-color: #9daabffa;
+    background-color: rgb(134 160 160);
     font-family: 'Times New Roman', Times, serif;
     font-size: large;
     margin-top: 80px;
@@ -47,9 +47,9 @@ body {
 }
 
 #header-cv img {
-    width: 180px;
-    margin-left: 41px;
-    margin-right: 67px;
+    width: 160px;
+    margin-left: 6px;
+    margin-right: 116px;
 }
 
 

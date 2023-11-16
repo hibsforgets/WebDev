@@ -36,9 +36,9 @@ session_destroy();
             </form>
             <div style="margin-top: 60px;">
                 <span>Not Registered Yet?</span>
-                <button class="button" style="width: 85px;">
-                        <a href="signup.html">Sign Up...</a>
-                    </button>
+                
+                        <a class = "span-a" href="signup.html">Sign Up...</a>
+                    
             </div>
         </div>
     </div>

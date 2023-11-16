@@ -3,20 +3,7 @@ body{
 
 }
 
-.form{
-    position: relative;
-    top:10%
-}
 
-.form label{
-    color: rgb(6, 6, 6);
-    font-size: 18px;
-    margin-right: 100px;
-    font-weight: bold;
-    position: relative;
-    right: 5%;
-    
-}
 
 .card {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -33,14 +20,6 @@ body{
   
 }
 
-.form input{
-    margin: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    font-size: 15px;
-    font-weight: bold;
-    border: 0px;
-    
-}
 
 .button{
     height: 30px;
@@ -69,3 +48,4 @@ a{
 .button:hover{
     background-color: rgb(180 255 229 / 97%);
 }
+

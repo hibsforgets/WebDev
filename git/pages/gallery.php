@@ -9,6 +9,21 @@
         header("Location:../pages/index.php");
         exit();
     }
+    // Read the JSON file
+    $jsonFilePath = '../data/gallery.json';
+
+    if (file_exists($jsonFilePath)) {
+        $jsonFile = file_get_contents($jsonFilePath);
+        $imageData = json_decode($jsonFile, true);
+
+    } 
+    else {
+    // Handle the case where the JSON file is missing or inaccessible
+    // For example, you might want to display an error message or log the issue
+    // You can customize this based on your application's requirements
+        echo "Error: JSON file not found or inaccessible.";
+        exit();
+        }
     ?>
 <html>
 
@@ -52,28 +67,27 @@
     </div>
     <div id="fixed-header"> <div style="padding: 10px;"> Gallery</div> </div>
 
-    <div class="gallery" style="margin-top: 30px;">
+    <div class="gallery">
         <div class="row">
             <?php
-            // Read the JSON file
-            $jsonFile = file_get_contents('../data/gallery.json');
-            $imageData = json_decode($jsonFile, true);
-
             // Loop through the images and generate thumbnails
             foreach ($imageData['images'] as $imageName) {
                 echo '
                 <div class="thumbnail">
-                    <div class="imgs">
-                        <input type="checkbox" name="" id="' . pathinfo($imageName, PATHINFO_FILENAME) . '">
-                        <label for="' . pathinfo($imageName, PATHINFO_FILENAME) . '">
-                            <img src="../images/' . $imageName . '">
-                        </label>
+                    <a href="#lightbox-' . pathinfo($imageName, PATHINFO_FILENAME) . '">
+                        <img src="../images/' . $imageName . '" alt="Gallery Image">
+                    </a>
+                    <div id="lightbox-' . pathinfo($imageName, PATHINFO_FILENAME) . '" class="lightbox">
+                        <img src="../images/' . $imageName . '" alt="Enlarged Image">
+                        <a href="#" class="back-button">Go Back</a>
                     </div>
                 </div>';
             }
             ?>
         </div>
     </div>
+
+    
 </body>
 
 </html>

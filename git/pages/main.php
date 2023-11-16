@@ -20,12 +20,9 @@
     <link rel="stylesheet" href="../css/mainstyle.css">
     <link rel="stylesheet" href="../css/icons.css">
     <link rel="stylesheet" href="../css/menu.css">
+    <link rel="stylesheet" href="../css/home.css">
 
-    <style>
-        body {
-            background: url(../images/deathnote.jpg) no-repeat center center fixed;
-        }
-    </style>
+    
 </head>
 <body>
 

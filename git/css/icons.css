@@ -45,6 +45,10 @@
 .contact-ico{
     background: url("../images/icons/contact.png");
 }
+
+.logout-ico{
+    background: url("../images/icons/logout.png")
+}
 .ico{
     width: 30px;
     height: 30px;
