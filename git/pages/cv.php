@@ -59,7 +59,7 @@
         
         <div id="header-cv">
             <div class="profile-pic">
-                <img src="../images/princess.webp">
+                <img src="../images/anime-pic.png">
             </div>
             <div class="title-name">
                 <b>Hiba Al Rammal </b>
@@ -113,7 +113,6 @@
                     <li> English</li>
                     <li>Arabic</li>
                 </ul>
-                <button class="download-button">Download as pdf</button>
             </div>
             <div id="right-side">
 

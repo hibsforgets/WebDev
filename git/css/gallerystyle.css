@@ -51,38 +51,13 @@ img {
     margin-top: 18px;
     padding: 12px;
 }
-/* .thumbnail:hover{
-    width: 235px;
-    height: 220px;
 
-} */
 
 a{
     color: rgba(0, 0, 0, 0);
 }
 
-/* .thumbnail:hover img{
-    width: 200px;
-    height:200px;
-    margin-left: 10px;
-    
-} */
 
-
-
-/* .imgs p {
-    margin-top: 2px;
-    cursor: zoom-in;
-    transition: transform 2s ease;
-}
-
-input[type=checkbox] {
-    display: none;
-}
-input[type=checkbox]:checked ~ label > img {
-    transform: scale(3);
-    cursor: zoom-out;
-} */
 
 .lightbox {
     display: none;

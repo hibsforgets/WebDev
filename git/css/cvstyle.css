@@ -123,22 +123,12 @@ ul li {
 
 .progress-bar {
     height: 100%;
-    background-color: rgb(204, 139, 189);
+    background-color: rgb(142 29 29);
     border-radius: 15px;
 }
 
 
-.download-button{
-    width: 200px;
-    height: 40px;
-    border-radius: 20px;
-    background-color: #86a0a0;
-    font-size: 22px;
-    border-color: white;
-    border-style: double;
-    margin-top: 110px;
-    margin-bottom: 110px;
-}
+
 
 .download-button:hover{
     background-color: white;
