@@ -1,5 +1,4 @@
 <?php
-
 session_start();
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -21,17 +20,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $_SESSION["username"] = $username;
 
             // Redirect to the main page after successful login
-            header("Location:../pages/main.php");
+            header("Location: ../pages/main.php");
             exit();
         }
     }
 
     // If no match is found, redirect to login page with an error message
-    header("Location:../pages/index.php");
+    header("Location:../index.php");
     exit();
 } else {
     // If the request method is not POST, redirect to login page
-    header("Location:../pages/login.php");
+    header("Location:../index.php");
     exit();
 }
 ?>

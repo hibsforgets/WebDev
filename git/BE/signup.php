@@ -30,6 +30,6 @@ $users[] = $user_data;
 file_put_contents($file_path, json_encode($users, JSON_PRETTY_PRINT));
 
 // Redirect to the login page
-header("Location:../pages/index.php");
+header("Location:../index.php");
 exit();  // Ensure that no code is executed after the redirect
 ?>

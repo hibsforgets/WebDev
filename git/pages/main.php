@@ -1,16 +1,15 @@
-<!DOCTYPE html>
-
 <?php
-    // Start or resume the session
     session_start();
     
     // Check if the username session variable is not set
     if (!isset($_SESSION["username"])) {
         // Redirect to the login page if not logged in
-        header("Location:../pages/index.php");
+        header("Location:../index.php");
         exit();
     }
     ?>
+<!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
